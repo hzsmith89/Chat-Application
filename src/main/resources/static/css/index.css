@@ -1,0 +1,67 @@
+body {
+    background: #371b44;
+    color: green;
+    font-family: "Arial Black";
+    text-align: center;
+}
+
+button {
+    font-size: 16px;
+}
+
+.join {
+    height: 30px;
+}
+
+button.join {
+    background: green;
+    color: white;
+    margin-left: 0;
+    border: none;
+}
+
+input.join {
+    width: 300px;
+    margin-right: 0;
+}
+
+.room-page {
+   display: none;
+}
+
+.chatter {
+    margin: auto;
+    text-align: center;
+    width: 500px;
+}
+
+.chat-instance {
+    width: 500px;
+    height: 30px;
+    border: 3px solid black;
+}
+
+.chit-chatter {
+    background: green;
+    color: #371b44;
+    float: left;
+    padding: 2px;
+    text-align: center;
+    vertical-align: center;
+    margin-right: 5px;
+}
+
+.chit-message {
+    text-align: left;
+    float: left;
+    padding: 2px;
+}
+
+.chat-instance {
+    padding: 5px;
+    margin: 5px;
+}
+
+.exit {
+    margin-top: 200px;
+}

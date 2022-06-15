@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chit Chat</title>
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+    <div id="welcome-page">
+        <h1>Welcome to Chit Chat!</h1>
+        <h3>Enter the room you would like to enter?</h3>
+        <div>
+            <input id="room-input" class="join" placeholder="Enter Room Name..." autofocus />
+            <input id="username" class="join" placeholder="Enter Username..." />
+            <button id="join-room-button" class="join" onclick="joinRoomHandler()">Join Room</button>
+        </div>
+    </div>
+    <div id="room-page" class="room-page">
+        <h1 id="room-welcome">Welcome to <span id="room-name">____</span> Room, <span id="username-greeting">____</span>!</h1>
+
+        <div id="chatter" class="chatter">
+        </div>
+
+        <div id="chat-input-area" class="chat-input-area">
+            <div>
+                <input id="chat-input" class="chat-input" placeholder="Start chatting..."/>
+                <button id="chat-input-button" class="chat-button" onclick="chitChat()">Chat</button>
+            </div>
+        </div>
+
+        <div class="exit">
+            <button onclick="disconnect()">Exit</button>
+        </div>
+
+
+    </div>
+
+    <script src="./webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="./webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+</html>
